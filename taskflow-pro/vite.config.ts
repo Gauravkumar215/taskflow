@@ -17,14 +17,6 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       hmr: process.env.DISABLE_HMR !== "true",
-
-      // ✅ ADD THIS
-      proxy: {
-        "/api": {
-          target: "http://localhost:4000", // 👈 your backend
-          changeOrigin: true,
-          secure: false,
-        },
       },
     },
   };
