@@ -1,4 +1,4 @@
-import api from "../../../../taskflow-pro12/Team Task Manager/taskflow-pro/src/services/api";
+import api from "./api";
 
 export const projectService = {
   getProjects: () => api.get("/projects"),
